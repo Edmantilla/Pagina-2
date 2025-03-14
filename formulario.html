@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="/tablas.html">Ejemplo de tablas</a></li>
+            <li><a href="/index.html">inicio</a></li>
+            <li><a href="/formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <fieldset>
+        <legend>Ingrese los datos basicos </legend>
+    <form action="" method="get" enctype="multipart/form-data">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre"  required placeholder="ingrese su nombre por favor">
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required placeholder="ingrese su apellido">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Ingrese sus contactos</legend>
+        <div>
+            <label for="contacto">Ingrese su numero telefonico</label>
+            <input type="number" name="contacto" id="contacto" required pattern="[0-9]{10,10}" >
+        </div>
+        <div>
+            <label for="direccion">Ingrese su direccion</label>
+            <input type="text" name="direccion" id="direccion" required placeholder="Ingrese su direccion" >
+        </div>
+    </fieldset>
+        <hr>
+        <h1>ingrese de que ciudad del area metropolitana es</h1>
+        <div>
+            <select name="ciudad" id="ciudad">
+                <option value="">Bucaramanga</option>
+                <option value="">Giron</option>
+                <option value="">Piedecuesta</option>
+                <option value="">Floridablanca</option>
+            </select>
+        </div>
+        <hr>
+        <h1>Ingrese su genero</h1>
+        <div>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" value="m" id="masculino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" name="sexo" value="f" id="masculino">
+        </div>
+        <hr>
+        <h1>Por que desea contactarse conmigo</h1>
+        <div>
+            <label for="trabajo">trabajo</label>
+            <input type="checkbox" name="tema[]" id="trabajo">
+            <label for="conocer">Conocerte</label>
+            <input type="checkbox" name="tema[]" id="conocer">
+            <label for="diversion">Diversion</label>
+            <input type="checkbox" name="tema[]" id="diversion">
+            <label for="negocios">Negocios</label>
+            <input type="checkbox" name="tema[]" id="negocios">
+        </div>
+        <hr>
+        <h1>Dejame un comentario</h1>
+        <div>
+            <textarea name="mensaje" id="mensaje" rows="5"></textarea>
+        </div>
+        <hr>
+        <h1>Carga una foto tuya para conocerte</h1>
+        <div>
+            <input type="file">
+        </div>
+        <hr>
+        <div>
+            <button type="submit">Envia el formulario</button>
+        </div>
+    </form>
+</body>
+</html>
